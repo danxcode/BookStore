@@ -1,0 +1,19 @@
+@import "normalize-css.css";
+@import "fontawesome.min.css";
+@import "brands.css";
+@import "solid.css";
+
+@font-face {
+    font-family: 'mahoor';
+    font-weight: normal;
+    src: url('../fonts/mahoor/Mahoor-Regular-FD-ELC.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'mahoor';
+    font-weight: bold;
+    src: url('../fonts/mahoor/Mahoor-FD-Bold.woff2') format('woff2');
+}
+
+
+

@@ -15,5 +15,65 @@
     src: url('../fonts/mahoor/Mahoor-FD-Bold.woff2') format('woff2');
 }
 
+:root {
+    --primaryColor: #894751;
+    --secondaryColor: #f7eaea;
+}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body{
+    font-family: 'mahoor' , sans-serif;
+    background-color: #f8f8f8;
+}
 
+#top-background svg{
+    fill: var(--primaryColor);
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+}
+
+.container{
+    width: 70%;
+    min-height: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#top-nav{
+    margin-top: 15px;
+}
+#top-nav nav{
+    background-color: white;
+    width: 100%;
+    min-height: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-nav .right-content{
+    border: 1px solid red;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#top-nav .left-content{
+    border: 1px solid blue;
+    width: 50%;
+}
+#top-nav .right-content img{
+    width: 200px;
+}
+
+#top-nav .right-content ul{
+    list-style-type: none;
+    display: flex;
+}

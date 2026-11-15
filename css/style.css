@@ -48,7 +48,7 @@ body{
 #top-nav{
     margin-top: 15px;
 }
-#top-nav nav{
+.navbar{
     background-color: white;
     width: 100%;
     min-height: 70px;
@@ -57,23 +57,40 @@ body{
     justify-content: space-between;
 }
 
-#top-nav .right-content{
+.navbar .right-content{
     border: 1px solid red;
-    width: 50%;
+    width: 70%;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-#top-nav .left-content{
+.navbar .left-content{
     border: 1px solid blue;
-    width: 50%;
+    width: 30%;
 }
-#top-nav .right-content img{
+.navbar .right-content img{
     width: 200px;
 }
 
-#top-nav .right-content ul{
+.navbar .right-content ul{
     list-style-type: none;
     display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-right: 20px;
+}
+
+.navbar .right-content ul a:link ,
+.navbar .right-content ul a:visited{
+    text-decoration: none;
+    color: #535353;
+    transition: all 0.2s;
+    font-size: 15px;
+}
+.navbar .right-content ul a:hover{
+    color: var(--primaryColor);
+}
+.navbar .right-content a i{
+    font-size: 13px;
 }

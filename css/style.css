@@ -42,7 +42,6 @@ body{
     width: 70%;
     min-height: 200px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 #top-nav{
@@ -52,22 +51,27 @@ body{
     background-color: white;
     width: 100%;
     min-height: 70px;
-    border-radius: 15px;
+    padding: 5px;
+    border-radius: 12px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .navbar .right-content{
-    border: 1px solid red;
-    width: 70%;
+    width: 72%;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .navbar .left-content{
-    border: 1px solid blue;
-    width: 30%;
+    width: 28%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
 }
 .navbar .right-content img{
     width: 200px;
@@ -93,4 +97,47 @@ body{
 }
 .navbar .right-content a i{
     font-size: 13px;
+}
+#search-form input{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background-color: #f2f3f4;
+    font-size: 12px;
+    border-radius: 5px;
+    color: #505050;
+}
+
+#search-form{
+    width: 250px;
+    background-color: #f2f3f4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-form a:link ,
+#search-form a:visited{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav-icon{
+    padding: 7px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f3f4;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-icon svg{
+    fill: #3b4963;
+    width: 25px;
 }
